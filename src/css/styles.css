@@ -38,3 +38,19 @@
   color: #666;
   text-transform: uppercase;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 380px;
+  margin-top: 8px;
+}
+
+.first-label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+justify-content: center;
+}
