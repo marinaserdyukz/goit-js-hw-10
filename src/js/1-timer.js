@@ -14,6 +14,7 @@ inputEl.value = '';
 
 startBtn.addEventListener("click", () => {
 startBtn.disabled = true;
+inputEl.disabled = true;
 
 intervalId = setInterval(() => {
 const currentTime = Date.now();
@@ -22,6 +23,8 @@ const diff = initTime - currentTime;
 if (diff <= 0) {
     clearInterval(intervalId);
     updateTimerDisplay({ d: 0, h: 0, m: 0, s: 0 });
+    inputEl.disabled = false; 
+    startBtn.disabled = true;
     inputEl.value = '';
     return;
   }
